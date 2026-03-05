@@ -1,0 +1,6 @@
+Image generation
+Grok Imagine
+
+Video generation
+Nim
+Kling O1 (start and end frames)

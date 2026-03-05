@@ -1,0 +1,13 @@
+# Demo/reference files
+section-demo.html
+process-demo.html
+gallery-demo.html
+
+# Reference images
+color-palette-1.png
+color-palette-2.jpg
+masonry-style-gallery.jpg
+
+# OS files
+.DS_Store
+Thumbs.db

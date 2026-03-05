@@ -1,0 +1,9 @@
+Light Studies
+Video generation
+Nim with Kling 3 Pro
+
+A minimalist cinematic “light study” scene inside a dark studio. A narrow beam of warm sunlight enters through a high window, cutting through the darkness. Fine dust particles float slowly in the air, revealing volumetric light rays. As the camera slowly pushes forward, the beam passes through a suspended glass prism, refracting the light into soft rainbow fragments that scatter across a textured concrete wall.
+
+The rainbow caustics gently shimmer and shift as the prism rotates slowly in mid-air. A shallow bowl of water sits below, reflecting the colors and projecting rippling light patterns onto nearby surfaces. The reflections softly dance across the wall and floor.
+
+Lighting is high contrast with deep shadows and luminous highlights. The atmosphere feels quiet, contemplative, and artistic — like a cinematographer studying the behavior of natural light.

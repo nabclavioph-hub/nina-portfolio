@@ -1,0 +1,12 @@
+Veil in the Wind
+Video generation
+Nim with Seedance 1.5
+
+5-second continuous shot. Close-up side profile of a woman as sheer silk fabric wraps around her face in slow motion. The wind feels gentle and unreal, moving in waves. Background fades into soft fog. Cool-toned color grading, high frame rate slow motion, macro lens feel, dreamy cinematic lighting, subtle lens bloom, elegant and minimal.
+
+====================
+Breath of Light
+Video generation
+Nim with Veo 3.1
+
+6-second cinematic slow motion. A woman in a translucent white gown stands in a dark void. A soft beam of golden light enters from above. As she inhales, fine particles of glowing dust rise around her body, lifting her slightly off the ground. Her fabric floats as if underwater. Ultra-slow motion, volumetric lighting, soft diffusion, shallow depth of field, 4K, poetic atmosphere, no harsh shadows, seamless loop ending.
