@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tools Grid Demo — Full Width</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --navy: #1d2b45;
+            --coral: #e67e73;
+            --gold: #f5c064;
+            --white: #ffffff;
+            --light-bg: #f8f6f3;
+            --text-secondary: #5a6275;
+            --text-light: #8a8f9e;
+            --border: #e8e5e0;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--light-bg);
+            color: var(--navy);
+            padding: 40px 24px;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            margin-bottom: 60px;
+            color: var(--navy);
+        }
+
+        .demo-section {
+            max-width: 1100px;
+            margin: 0 auto 80px;
+        }
+
+        .demo-label {
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--text-light);
+            text-align: center;
+            margin-bottom: 12px;
+        }
+
+        .demo-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
+            text-align: center;
+            margin-bottom: 12px;
+            color: var(--navy);
+        }
+
+        .demo-subtitle {
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 36px;
+        }
+
+        /* ==========================================
+           SCATTERED LOGO FLOW
+           Full-width, no borders, uneven natural
+           wrap with breathing room
+           ========================================== */
+        .logo-flow {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 24px 32px;
+            padding: 10px 0;
+        }
+
+        .logo-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            transition: transform 0.25s ease;
+            cursor: default;
+        }
+
+        .logo-item:hover {
+            transform: translateY(-4px);
+        }
+
+        .logo-item img {
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            transition: box-shadow 0.25s ease;
+        }
+
+        .logo-item:hover img,
+        .logo-item:hover .logo-ph {
+            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+        }
+
+        .logo-ph {
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, var(--coral), var(--gold));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 0.6rem;
+            font-weight: 700;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            transition: box-shadow 0.25s ease;
+        }
+
+        .logo-item span {
+            font-size: 0.7rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+            text-align: center;
+            line-height: 1.3;
+            max-width: 80px;
+        }
+
+        /* Group label — thin line with text */
+        .flow-group-label {
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            color: var(--text-light);
+            text-align: center;
+            margin: 36px 0 18px;
+            position: relative;
+        }
+
+        .flow-group-label::before,
+        .flow-group-label::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 60px;
+            height: 1px;
+            background: var(--border);
+        }
+        .flow-group-label::before { right: calc(50% + 70px); }
+        .flow-group-label::after { left: calc(50% + 70px); }
+
+        .flow-group-label:first-child {
+            margin-top: 0;
+        }
+
+        /* ==========================================
+           DARK THEME VARIANT
+           ========================================== */
+        .dark-bg {
+            background: #1d2b45;
+            border-radius: 20px;
+            padding: 48px 40px;
+        }
+
+        .dark-bg .demo-title {
+            color: rgba(255,255,255,0.9);
+        }
+
+        .dark-bg .demo-subtitle {
+            color: rgba(255,255,255,0.45);
+        }
+
+        .dark-bg .logo-item span {
+            color: rgba(255,255,255,0.55);
+        }
+
+        .dark-bg .logo-item img {
+            box-shadow: 0 2px 10px rgba(0,0,0,0.25);
+        }
+
+        .dark-bg .logo-item:hover img,
+        .dark-bg .logo-item:hover .logo-ph {
+            box-shadow: 0 6px 24px rgba(0,0,0,0.35);
+        }
+
+        .dark-bg .logo-ph {
+            background: rgba(255,255,255,0.1);
+            color: rgba(255,255,255,0.5);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.25);
+        }
+
+        /* Divider */
+        hr {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 80px auto;
+            max-width: 200px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Tools Grid Demo</h1>
+
+    <!-- ===================== Tech Arsenal (Light) ===================== -->
+    <div class="demo-section">
+        <p class="demo-label">Tech Arsenal — Light Theme</p>
+        <h2 class="demo-title">Tech Arsenal</h2>
+        <p class="demo-subtitle">The tools and platforms behind the work</p>
+
+        <p class="flow-group-label">Scientific Research</p>
+        <div class="logo-flow">
+            <div class="logo-item">
+                <img src="https://www.google.com/s2/favicons?domain=autodock.scripps.edu&sz=128" alt="">
+                <span>AutoDock</span>
+            </div>
+            <div class="logo-item">
+                <img src="https://www.google.com/s2/favicons?domain=3ds.com&sz=128" alt="">
+                <span>Discovery Studio</span>
+            </div>
+            <div class="logo-item">
+                <img src="https://www.google.com/s2/favicons?domain=schrodinger.com&sz=128" alt="">
+                <span>Glide</span>
+            </div>
+            <div class="logo-item">
+                <img src="https://www.google.com/s2/favicons?domain=ccdc.cam.ac.uk&sz=128" alt="">
+                <span>GOLD</span>
+            </div>
+        </div>
+
+        <p class="flow-group-label">Admin & Development</p>
+        <div class="logo-flow">
+            <div class="logo-item">
+                <img src="https://www.google.com/s2/favicons?domain=jira.atlassian.com&sz=128" alt="">
+                <span>Jira</span>
+            </div>
+            <div class="logo-item">
+                <img src="https://www.google.com/s2/favicons?domain=trello.com&sz=128" alt="">
+                <span>Trello</span>
+            </div>
+            <div class="logo-item">
+                <img src="https://www.google.com/s2/favicons?domain=asana.com&sz=128" alt="">
+                <span>Asana</span>
+            </div>
+            <div class="logo-item">
+                <img src="https://www.google.com/s2/favicons?domain=monday.com&sz=128" alt="">
+                <span>Monday.com</span>
+            </div>
+            <div class="logo-item">
+                <img src="https://www.google.com/s2/favicons?domain=notion.so&sz=128" alt="">
+                <span>Notion</span>
+            </div>
+            <div class="logo-item">
+                <img src="https://www.google.com/s2/favicons?domain=slack.com&sz=128" alt="">
+                <span>Slack</span>
+            </div>
+            <div class="logo-item">
+                <img src="https://www.google.com/s2/favicons?domain=teams.microsoft.com&sz=128" alt="">
+                <span>MS Teams</span>
+            </div>
+            <div class="logo-item">
+                <img src="https://www.google.com/s2/favicons?domain=zoom.us&sz=128" alt="">
+                <span>Zoom</span>
+            </div>
+            <div class="logo-item">
+                <img src="https://www.google.com/s2/favicons?domain=workspace.google.com&sz=128" alt="">
+                <span>Google Workspace</span>
+            </div>
+            <div class="logo-item">
+                <img src="https://www.google.com/s2/favicons?domain=claude.ai&sz=128" alt="">
+                <span>Claude AI</span>
+            </div>
+            <div class="logo-item">
+                <img src="https://www.google.com/s2/favicons?domain=chatgpt.com&sz=128" alt="">
+                <span>ChatGPT</span>
+            </div>
+            <div class="logo-item">
+                <img src="https://www.google.com/s2/favicons?domain=figma.com&sz=128" alt="">
+                <span>Figma</span>
+            </div>
+            <div class="logo-item">
+                <img src="https://www.google.com/s2/favicons?domain=canva.com&sz=128" alt="">
+                <span>Canva</span>
+            </div>
+            <div class="logo-item">
+                <img src="https://www.google.com/s2/favicons?domain=whimsical.com&sz=128" alt="">
+                <span>Whimsical</span>
+            </div>
+            <div class="logo-item">
+                <img src="https://www.google.com/s2/favicons?domain=code.visualstudio.com&sz=128" alt="">
+                <span>VS Code</span>
+            </div>
+            <div class="logo-item">
+                <img src="https://www.google.com/s2/favicons?domain=github.com&sz=128" alt="">
+                <span>GitHub</span>
+            </div>
+            <div class="logo-item">
+                <img src="https://www.google.com/s2/favicons?domain=firebase.google.com&sz=128" alt="">
+                <span>Firebase</span>
+            </div>
+            <div class="logo-item">
+                <img src="https://www.google.com/s2/favicons?domain=vercel.com&sz=128" alt="">
+                <span>Vercel</span>
+            </div>
+            <div class="logo-item">
+                <div class="logo-ph">CSS</div>
+                <span>CSS</span>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- ===================== AI Creative Tools (Dark) ===================== -->
+    <div class="demo-section">
+        <p class="demo-label">AI Creative Tools — Dark Theme</p>
+        <div class="dark-bg">
+            <h2 class="demo-title">AI Creative Tools</h2>
+            <p class="demo-subtitle">The platforms and creative tools behind the work</p>
+
+            <div class="logo-flow">
+                <div class="logo-item">
+                    <img src="https://www.google.com/s2/favicons?domain=gemini.google.com&sz=128" alt="">
+                    <span>Google Gemini</span>
+                </div>
+                <div class="logo-item">
+                    <img src="https://www.google.com/s2/favicons?domain=x.ai&sz=128" alt="">
+                    <span>Grok Imagine</span>
+                </div>
+                <div class="logo-item">
+                    <img src="https://www.google.com/s2/favicons?domain=openart.ai&sz=128" alt="">
+                    <span>OpenArt</span>
+                </div>
+                <div class="logo-item">
+                    <div class="logo-ph">S5</div>
+                    <span>Seedance 5.0 Lite</span>
+                </div>
+                <div class="logo-item">
+                    <div class="logo-ph">NB</div>
+                    <span>Nano Banana 2</span>
+                </div>
+                <div class="logo-item">
+                    <img src="https://www.google.com/s2/favicons?domain=nimai.com&sz=128" alt="">
+                    <span>Nim</span>
+                </div>
+                <div class="logo-item">
+                    <div class="logo-ph">S1</div>
+                    <span>Seedance 1.5</span>
+                </div>
+                <div class="logo-item">
+                    <img src="https://www.google.com/s2/favicons?domain=deepmind.google&sz=128" alt="">
+                    <span>Veo 3.1</span>
+                </div>
+                <div class="logo-item">
+                    <img src="https://www.google.com/s2/favicons?domain=klingai.com&sz=128" alt="">
+                    <span>Kling O1</span>
+                </div>
+                <div class="logo-item">
+                    <img src="https://www.google.com/s2/favicons?domain=klingai.com&sz=128" alt="">
+                    <span>Kling 3 Pro</span>
+                </div>
+                <div class="logo-item">
+                    <img src="https://www.google.com/s2/favicons?domain=capcut.com&sz=128" alt="">
+                    <span>CapCut</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

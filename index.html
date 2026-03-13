@@ -24,7 +24,7 @@
                 <li><a href="#services" class="nav-link">Services</a></li>
                 <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
                 <li><a href="#ai-works" class="nav-link">AI Visuals</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#contact" class="nav-link">Let's Connect</a></li>
             </ul>
         </div>
     </nav>
@@ -110,20 +110,20 @@
             <h2 class="section-title">What I Do</h2>
             <p class="section-subtitle">Professional services across multiple disciplines</p>
             <div class="services-grid">
-                <div class="service-card">
+                <a href="#portfolio" class="service-card service-card-link">
                     <div class="service-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
                     </div>
                     <h3>Research & Project Management</h3>
                     <p>End-to-end research, strategic planning, and project delivery. From deep-dive analysis to cross-functional team coordination, I turn complex challenges into structured, actionable outcomes.</p>
-                </div>
-                <div class="service-card">
+                </a>
+                <a href="#ai-works" class="service-card service-card-link">
                     <div class="service-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
                     </div>
                     <h3>AI Visual Storytelling</h3>
                     <p>Crafting compelling visual narratives using AI-powered tools — from concept art and illustrations to video and multimedia — blending creative vision with generative AI to bring stories to life.</p>
-                </div>
+                </a>
             </div>
         </div>
     </section>
@@ -135,7 +135,7 @@
             
 
             <div class="how-i-work">
-                <h3 class="how-i-work-title">How I Work</h3>
+                <!--h3 class="how-i-work-title">How I Work</h3-->
                 <p class="how-i-work-intro">My background in academic research shaped how I approach projects: with curiosity, structure, and careful attention to detail. I enjoy working at the intersection of research, coordination, and creative exploration, helping ideas move from concept to completion.</p>
                 <p class="how-i-work-label">My approach typically includes:</p>
                 <div class="timeline-h">
@@ -176,101 +176,107 @@
 
             <div class="portfolio-filters">
                 <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="agile">Agile</button>
-                <button class="filter-btn" data-filter="waterfall">Waterfall</button>
-                <button class="filter-btn" data-filter="strategy">Strategy</button>
+                <button class="filter-btn" data-filter="research">Research</button>
+                <button class="filter-btn" data-filter="operations">Operations</button>
+                <button class="filter-btn" data-filter="development">Development</button>
             </div>
             <div class="portfolio-grid">
-                <div class="portfolio-card" data-category="agile">
+                <div class="portfolio-card" data-category="research">
                     <div class="portfolio-image">
                         <div class="portfolio-placeholder">
                             <span>Project Image</span>
                         </div>
                         <div class="portfolio-overlay">
-                            <a href="#" class="portfolio-link">View Details</a>
+                            <a href="#" class="portfolio-link" data-project="0">View Details</a>
                         </div>
                     </div>
                     <div class="portfolio-info">
-                        <span class="portfolio-tag">Agile</span>
-                        <h3>E-Commerce Platform Redesign</h3>
-                        <p>Led a team of 12 through a full platform overhaul, delivering 3 weeks ahead of schedule with a 40% improvement in user engagement.</p>
+                        <span class="portfolio-tag">Research · Flagship</span>
+                        <h3>Virtual Screening of Molecular Inhibitors Targeting <em>M. tuberculosis</em> Proteins</h3>
+                        <p>Led computational screening of candidate molecules targeting tuberculosis proteins and coordinated research workflows between computational and wet-laboratory teams, supporting the project from proposal development to publication.</p>
                     </div>
                 </div>
-                <div class="portfolio-card" data-category="waterfall">
+                <div class="portfolio-card" data-category="research">
                     <div class="portfolio-image">
                         <div class="portfolio-placeholder">
                             <span>Project Image</span>
                         </div>
                         <div class="portfolio-overlay">
-                            <a href="#" class="portfolio-link">View Details</a>
+                            <a href="#" class="portfolio-link" data-project="1">View Details</a>
                         </div>
                     </div>
                     <div class="portfolio-info">
-                        <span class="portfolio-tag">Waterfall</span>
-                        <h3>Enterprise CRM Implementation</h3>
-                        <p>Managed end-to-end CRM deployment for a 500+ person organization, including data migration, training, and change management.</p>
+                        <span class="portfolio-tag">Research</span>
+                        <h3>Computational Drug Discovery Workflow</h3>
+                        <p>Designed and executed a computational screening workflow to evaluate candidate molecules targeting tuberculosis proteins.</p>
                     </div>
                 </div>
-                <div class="portfolio-card" data-category="strategy">
+                <div class="portfolio-card" data-category="operations">
                     <div class="portfolio-image">
                         <div class="portfolio-placeholder">
                             <span>Project Image</span>
                         </div>
                         <div class="portfolio-overlay">
-                            <a href="#" class="portfolio-link">View Details</a>
+                            <a href="#" class="portfolio-link" data-project="2">View Details</a>
                         </div>
                     </div>
                     <div class="portfolio-info">
-                        <span class="portfolio-tag">Strategy</span>
-                        <h3>Digital Transformation Roadmap</h3>
-                        <p>Developed and executed a 2-year digital transformation strategy, streamlining operations and reducing costs by 25%.</p>
+                        <span class="portfolio-tag">Operations</span>
+                        <h3>Research Operations & Procurement Coordination</h3>
+                        <p>Coordinated procurement, documentation, budgeting, and reporting processes for a multidisciplinary tuberculosis research project.</p>
                     </div>
                 </div>
-                <div class="portfolio-card" data-category="agile">
+                <div class="portfolio-card" data-category="development">
                     <div class="portfolio-image">
                         <div class="portfolio-placeholder">
                             <span>Project Image</span>
                         </div>
                         <div class="portfolio-overlay">
-                            <a href="#" class="portfolio-link">View Details</a>
+                            <a href="#" class="portfolio-link" data-project="3">View Details</a>
                         </div>
                     </div>
                     <div class="portfolio-info">
-                        <span class="portfolio-tag">Agile</span>
-                        <h3>Mobile App Launch</h3>
-                        <p>Coordinated cross-functional teams across 3 time zones to deliver a consumer mobile app from concept to App Store in 6 months.</p>
+                        <span class="portfolio-tag">Development</span>
+                        <h3>Employee Reimbursement Request Web Application</h3>
+                        <p>Designed and developed a browser-based application for submitting reimbursement requests and tracking expense claims.</p>
                     </div>
                 </div>
-                <div class="portfolio-card" data-category="strategy">
-                    <div class="portfolio-image">
-                        <div class="portfolio-placeholder">
-                            <span>Project Image</span>
-                        </div>
-                        <div class="portfolio-overlay">
-                            <a href="#" class="portfolio-link">View Details</a>
-                        </div>
-                    </div>
-                    <div class="portfolio-info">
-                        <span class="portfolio-tag">Strategy</span>
-                        <h3>Process Optimization Initiative</h3>
-                        <p>Led a company-wide Lean Six Sigma initiative that identified and eliminated bottlenecks, improving throughput by 35%.</p>
-                    </div>
-                </div>
-                <div class="portfolio-card" data-category="waterfall">
-                    <div class="portfolio-image">
-                        <div class="portfolio-placeholder">
-                            <span>Project Image</span>
-                        </div>
-                        <div class="portfolio-overlay">
-                            <a href="#" class="portfolio-link">View Details</a>
-                        </div>
-                    </div>
-                    <div class="portfolio-info">
-                        <span class="portfolio-tag">Waterfall</span>
-                        <h3>Infrastructure Migration</h3>
-                        <p>Managed cloud infrastructure migration for a financial services firm with zero downtime and full regulatory compliance.</p>
-                    </div>
-                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Arsenal Section -->
+    <section class="section tech-arsenal" id="tech-arsenal">
+        <div class="container">
+            <h2 class="section-title">Tech Arsenal</h2>
+
+            <p class="flow-group-label">Scientific Research</p>
+            <div class="logo-flow">
+                <div class="logo-item"><img src="https://www.google.com/s2/favicons?domain=autodock.scripps.edu&sz=128" alt=""><span>AutoDock</span></div>
+                <div class="logo-item"><img src="https://www.google.com/s2/favicons?domain=3ds.com&sz=128" alt=""><span>Discovery Studio</span></div>
+                <div class="logo-item"><img src="https://www.google.com/s2/favicons?domain=schrodinger.com&sz=128" alt=""><span>Glide</span></div>
+                <div class="logo-item"><img src="https://www.google.com/s2/favicons?domain=ccdc.cam.ac.uk&sz=128" alt=""><span>GOLD</span></div>
+            </div>
+
+            <p class="flow-group-label">Admin & Development</p>
+            <div class="logo-flow">
+                <div class="logo-item"><img src="https://www.google.com/s2/favicons?domain=trello.com&sz=128" alt=""><span>Trello</span></div>
+                <div class="logo-item"><img src="https://www.google.com/s2/favicons?domain=notion.so&sz=128" alt=""><span>Notion</span></div>
+                <div class="logo-item"><img src="https://www.google.com/s2/favicons?domain=slack.com&sz=128" alt=""><span>Slack</span></div>
+                <div class="logo-item"><img src="https://www.google.com/s2/favicons?domain=teams.microsoft.com&sz=128" alt=""><span>MS Teams</span></div>
+                <div class="logo-item"><img src="https://www.google.com/s2/favicons?domain=zoom.us&sz=128" alt=""><span>Zoom</span></div>
+                <div class="logo-item"><img src="https://www.google.com/s2/favicons?domain=workspace.google.com&sz=128" alt=""><span>Google Workspace</span></div>
+                <div class="logo-item"><img src="https://www.google.com/s2/favicons?domain=claude.ai&sz=128" alt=""><span>Claude AI</span></div>
+                <div class="logo-item"><img src="https://www.google.com/s2/favicons?domain=chatgpt.com&sz=128" alt=""><span>ChatGPT</span></div>
+                <div class="logo-item"><img src="https://www.google.com/s2/favicons?domain=figma.com&sz=128" alt=""><span>Figma</span></div>
+                <div class="logo-item"><img src="https://www.google.com/s2/favicons?domain=canva.com&sz=128" alt=""><span>Canva</span></div>
+                <div class="logo-item"><img src="https://www.google.com/s2/favicons?domain=whimsical.com&sz=128" alt=""><span>Whimsical</span></div>
+                <div class="logo-item"><img src="https://www.google.com/s2/favicons?domain=code.visualstudio.com&sz=128" alt=""><span>VS Code</span></div>
+                <div class="logo-item"><img src="https://www.google.com/s2/favicons?domain=github.com&sz=128" alt=""><span>GitHub</span></div>
+                <div class="logo-item"><img src="https://www.google.com/s2/favicons?domain=firebase.google.com&sz=128" alt=""><span>Firebase</span></div>
+                <div class="logo-item"><img src="https://www.google.com/s2/favicons?domain=vercel.com&sz=128" alt=""><span>Vercel</span></div>
+                <div class="logo-item"><img src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg" alt=""><span>CSS</span></div>
+                <div class="logo-item"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt=""><span>JavaScript</span></div>
             </div>
         </div>
     </section>
@@ -278,7 +284,7 @@
     <!-- Transition Divider -->
     <div class="section-transition">
         <div class="transition-line"></div>
-        <p class="transition-quote">From structure to visual story-telling.</p>
+        <p class="transition-quote">From structure to imagination.</p>
         <div class="transition-line"></div>
     </div>
 
@@ -397,11 +403,6 @@
                             <h4>Reference Images</h4>
                             <div class="panel-thumbnails" id="panelThumbnails"></div>
                         </div>
-                        <div class="panel-nav">
-                            <button class="panel-nav-btn" id="panelPrev" aria-label="Previous">&#8592; Prev</button>
-                            <span class="panel-counter" id="panelCounter"></span>
-                            <button class="panel-nav-btn" id="panelNext" aria-label="Next">Next &#8594;</button>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -411,37 +412,20 @@
     <!-- AI Tools Section -->
     <section class="section ai-tools" id="tools">
         <div class="container">
-            <h2 class="section-title">Tools I work with</h2>
+            <!-- h2 class="section-title">Tools I work with</h2 -->
             <p class="section-subtitle">The platforms and creative tools behind the work</p>
-            <div class="tools-grid">
-                <div class="tool-category">
-                    <h3 class="tool-category-title">Image Generation</h3>
-                    <div class="tool-list">
-                        <span class="tool-tag"><img class="tool-icon" src="https://www.google.com/s2/favicons?domain=gemini.google.com&sz=32" alt="">Google Gemini</span>
-                        <span class="tool-tag"><img class="tool-icon" src="https://www.google.com/s2/favicons?domain=x.ai&sz=32" alt="">Grok Imagine</span>
-                        <span class="tool-tag"><img class="tool-icon" src="https://www.google.com/s2/favicons?domain=openart.ai&sz=32" alt="">OpenArt</span>
-                        <span class="tool-tag">Seedream 5.0</span>
-                        <span class="tool-tag">Nano Banana 2</span>
-                    </div>
-                </div>
-                <div class="tool-category">
-                    <h3 class="tool-category-title">Video Generation</h3>
-                    <div class="tool-list">
-                        <span class="tool-tag"><img class="tool-icon" src="https://www.google.com/s2/favicons?domain=nimai.com&sz=32" alt="">Nim</span>
-                        <span class="tool-tag">Seedance 1.5</span>
-                        <span class="tool-tag"><img class="tool-icon" src="https://www.google.com/s2/favicons?domain=deepmind.google&sz=32" alt="">Veo 3.1</span>
-                        <span class="tool-tag"><img class="tool-icon" src="https://www.google.com/s2/favicons?domain=klingai.com&sz=32" alt="">Kling O1</span>
-                        <span class="tool-tag"><img class="tool-icon" src="https://www.google.com/s2/favicons?domain=klingai.com&sz=32" alt="">Kling 3 Pro</span>
-                    </div>
-                </div>
-                <div class="tool-category">
-                    <h3 class="tool-category-title">Editing & Post-Production</h3>
-                    <div class="tool-list">
-                        <span class="tool-tag"><img class="tool-icon" src="https://www.google.com/s2/favicons?domain=adobe.com&sz=32" alt="">Adobe Photoshop</span>
-                        <span class="tool-tag"><img class="tool-icon" src="https://www.google.com/s2/favicons?domain=adobe.com&sz=32" alt="">Adobe Lightroom</span>
-                        <span class="tool-tag"><img class="tool-icon" src="https://www.google.com/s2/favicons?domain=blackmagicdesign.com&sz=32" alt="">DaVinci Resolve</span>
-                    </div>
-                </div>
+            <div class="logo-flow">
+                <div class="logo-item"><img src="https://www.google.com/s2/favicons?domain=gemini.google.com&sz=128" alt=""><span>Google Gemini</span></div>
+                <div class="logo-item"><img src="https://www.google.com/s2/favicons?domain=x.ai&sz=128" alt=""><span>Grok Imagine</span></div>
+                <div class="logo-item"><img src="https://www.google.com/s2/favicons?domain=openart.ai&sz=128" alt=""><span>OpenArt</span></div>
+                <div class="logo-item"><img src="https://www.google.com/s2/favicons?domain=seedance.ai&sz=128" alt=""><span>Seedance 5.0 / 1.5</span></div>
+                <div class="logo-item"><img src="https://www.google.com/s2/favicons?domain=nanobanana.im&sz=128" alt=""><span>Nano Banana 2</span></div>
+                <div class="logo-item"><img src="https://www.google.com/s2/favicons?domain=nim.video&sz=128" alt=""><span>Nim</span></div>
+                <div class="logo-item"><img src="https://www.google.com/s2/favicons?domain=deepmind.google&sz=128" alt=""><span>Veo 3.1</span></div>
+                <div class="logo-item"><img src="https://www.google.com/s2/favicons?domain=klingai.com&sz=128" alt=""><span>Kling O1 / 3 Pro</span></div>
+                <div class="logo-item"><img src="https://www.google.com/s2/favicons?domain=capcut.com&sz=128" alt=""><span>CapCut</span></div>
+                <div class="logo-item"><img src="https://www.google.com/s2/favicons?domain=artlist.io&sz=128" alt=""><span>Artlist</span></div>
+                <div class="logo-item"><img src="https://www.google.com/s2/favicons?domain=higgsfield.ai&sz=128" alt=""><span>Higgsfield</span></div>
             </div>
         </div>
     </section>
@@ -506,7 +490,6 @@
                     <a href="#services">Services</a>
                     <a href="#portfolio">Portfolio</a>
                     <a href="#ai-works">AI Visuals</a>
-                    <a href="#contact">Contact</a>
                 </div>
                 <div class="footer-social">
                     <a href="mailto:nabclavioph@gmail.com" aria-label="Email">
@@ -525,6 +508,52 @@
             </div>
         </div>
     </footer>
+
+    <!-- Portfolio Modal -->
+    <div class="portfolio-modal-overlay" id="portfolioModalOverlay">
+        <div class="portfolio-modal" id="portfolioModal">
+            <button class="modal-close" id="modalClose" aria-label="Close modal">&times;</button>
+            <div class="modal-hero">
+                <div class="modal-hero-bg"></div>
+                <div class="modal-hero-content">
+                    <span class="modal-tag" id="modalTag"></span>
+                    <h1 class="modal-title" id="modalTitle"></h1>
+                    <p class="modal-summary" id="modalDesc"></p>
+                </div>
+            </div>
+            <div class="modal-content">
+                <div class="modal-stats" id="modalStats"></div>
+                <div class="modal-section" id="modalRoleSection">
+                    <!--h3>My Role</h3-->
+                    <p id="modalRoleDesc"></p>
+                </div>
+                <div class="modal-section" id="modalOverviewSection">
+                    <h3>Project Overview</h3>
+                    <div id="modalOverview"></div>
+                </div>
+                <div class="modal-section" id="modalWorkflowSection">
+                    <h3>Research Workflow</h3>
+                    <div class="modal-workflow" id="modalWorkflow"></div>
+                </div>
+                <div class="modal-section" id="modalOutcomesSection">
+                    <h3>Key Outcomes</h3>
+                    <ul class="modal-outcomes-list" id="modalOutcomesList"></ul>
+                </div>
+                <div class="modal-section" id="modalPipelineSection" style="display:none">
+                    <h3 id="modalPipelineLabel">Computational Workflow</h3>
+                    <div class="modal-pipeline" id="modalPipeline"></div>
+                </div>
+                <div class="modal-section" id="modalSecondaryOutcomesSection" style="display:none">
+                    <h3 id="modalSecondaryOutcomesLabel">Outcome</h3>
+                    <ul class="modal-outcomes-list" id="modalSecondaryOutcomesList"></ul>
+                </div>
+                <div class="modal-section" id="modalToolsSection">
+                    <h3>Tools & Technologies</h3>
+                    <div class="modal-tools-visual" id="modalToolsVisual"></div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
