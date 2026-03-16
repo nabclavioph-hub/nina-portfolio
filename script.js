@@ -341,6 +341,7 @@ document.getElementById('panelOverlay').addEventListener('click', closePanel);
 const projectData = [
     {
         tag: 'Research · Flagship',
+        coverImage: 'assets/projects/project-1-cover.png',
         title: 'Virtual screening of molecular inhibitors targeting <em>Mycobacterium tuberculosis</em> proteins',
         desc: 'Led computational screening of candidate molecules targeting tuberculosis proteins and coordinated research workflows between computational and wet-laboratory teams, supporting the project from proposal development to publication.',
         role: 'Computational Research Investigator & Project Coordinator',
@@ -387,6 +388,7 @@ const projectData = [
     },
     {
         tag: 'Research',
+        coverImage: 'assets/projects/project-2-cover.png',
         title: 'Computational Drug Discovery Workflow',
         desc: 'Designed and executed a computational screening workflow to evaluate candidate molecules targeting tuberculosis proteins, producing experimental insights that guided downstream laboratory research.',
         role: 'Computational Researcher',
@@ -430,6 +432,7 @@ const projectData = [
     },
     {
         tag: 'Operations',
+        coverImage: 'assets/projects/project-3-cover.png',
         title: 'Research Operations & Procurement Coordination',
         desc: 'Coordinated the operational and administrative aspects of a multidisciplinary tuberculosis research project, supporting procurement, documentation, budgeting, and reporting processes required for successful project execution.',
         role: 'Research Operations Coordinator',
@@ -464,6 +467,7 @@ const projectData = [
     },
     {
         tag: 'Development',
+        coverImage: 'assets/projects/project-4-cover.png',
         title: 'Employee Reimbursement Request Web Application',
         desc: 'Designed and developed a browser-based application that allows employees to submit reimbursement requests and track approval status, providing a structured workflow for managing expense claims.',
         role: 'Web Application Developer',
@@ -557,6 +561,16 @@ function openProjectModal(index) {
     const data = projectData[index];
 
     // Hero content
+    const heroBg = document.querySelector('.modal-hero-bg');
+    if (data.coverImage) {
+        heroBg.style.backgroundImage = `url('${data.coverImage}')`;
+        heroBg.style.backgroundSize = 'cover';
+        heroBg.style.backgroundPosition = 'center';
+    } else {
+        heroBg.style.backgroundImage = '';
+        heroBg.style.backgroundSize = '';
+        heroBg.style.backgroundPosition = '';
+    }
     modalTag.textContent = data.tag;
     modalTitle.innerHTML = data.title;
     modalDesc.textContent = data.desc;
@@ -707,3 +721,36 @@ window.addEventListener('scroll', () => {
 // Trigger initial check
 animateStats();
 revealOnScroll();
+
+// ============================================
+// LAZY-LOAD VIDEOS (hover to play)
+// ============================================
+const lazyVideos = document.querySelectorAll('video[data-src]');
+
+// Preload video src when near viewport and show first frame
+const videoObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        const video = entry.target;
+        if (entry.isIntersecting && !video.src) {
+            video.src = video.dataset.src;
+            video.currentTime = 0;
+        }
+    });
+}, { rootMargin: '400px' });
+
+lazyVideos.forEach(video => {
+    videoObserver.observe(video);
+
+    const card = video.closest('.ai-card');
+    if (card) {
+        card.addEventListener('mouseenter', () => {
+            if (!video.src && video.dataset.src) {
+                video.src = video.dataset.src;
+            }
+            video.play().catch(() => {});
+        });
+        card.addEventListener('mouseleave', () => {
+            video.pause();
+        });
+    }
+});
