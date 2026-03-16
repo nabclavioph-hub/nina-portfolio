@@ -1364,6 +1364,10 @@ a.service-card-link {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+.logo-item:hover {
+    z-index: 10;
+}
+
 .logo-item:hover span {
     opacity: 1;
 }
