@@ -339,6 +339,7 @@ img {
 .hero-description {
     font-size: 1.05rem;
     color: rgba(255, 255, 255, 0.7);
+    font-style: italic;
     max-width: 550px;
     margin: 0 auto 40px;
     line-height: 1.8;
