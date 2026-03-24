@@ -44,7 +44,7 @@ html {
 }
 
 body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
     color: var(--text-primary);
     background: var(--white);
     line-height: 1.7;
@@ -52,7 +52,7 @@ body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: 'Playfair Display', Georgia, serif;
+    font-family: 'Cormorant Garamond', Georgia, serif;
     line-height: 1.3;
 }
 
@@ -104,7 +104,7 @@ img {
     cursor: pointer;
     transition: all 0.3s ease;
     border: 2px solid transparent;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .btn-primary {
@@ -184,7 +184,7 @@ img {
 }
 
 .nav-logo {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Cormorant Garamond', serif;
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--white);
@@ -473,7 +473,7 @@ img {
 
 .stat-number {
     display: block;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Cormorant Garamond', serif;
     font-size: 2.5rem;
     font-weight: 700;
     color: var(--coral);
@@ -614,7 +614,7 @@ a.service-card-link {
 }
 
 .how-i-work-title {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Cormorant Garamond', serif;
     font-size: 1.5rem;
     color: var(--navy);
     margin-bottom: 16px;
@@ -695,7 +695,7 @@ a.service-card-link {
 }
 
 .timeline-h-step h4 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Cormorant Garamond', serif;
     font-size: 1rem;
     color: var(--navy);
     margin-bottom: 8px;
@@ -725,7 +725,7 @@ a.service-card-link {
     font-size: 0.9rem;
     cursor: pointer;
     transition: all 0.3s;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .filter-btn.active,
@@ -976,7 +976,7 @@ a.service-card-link {
 }
 
 .modal-title {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Cormorant Garamond', serif;
     font-size: 1.85rem;
     color: var(--white);
     margin-bottom: 12px;
@@ -1060,7 +1060,7 @@ a.service-card-link {
 }
 
 .modal-section h3 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Cormorant Garamond', serif;
     font-size: 1.15rem;
     color: var(--navy);
     margin-bottom: 16px;
@@ -1453,7 +1453,7 @@ a.service-card-link {
 }
 
 .transition-quote {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Cormorant Garamond', serif;
     font-size: 1.3rem;
     font-style: italic;
     color: var(--gold);
@@ -1833,7 +1833,7 @@ a.service-card-link {
 }
 
 .panel-section h4 {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 0.8rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -1902,7 +1902,7 @@ a.service-card-link {
     border-radius: 50px;
     background: var(--white);
     cursor: pointer;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 0.8rem;
     color: var(--navy);
     transition: all 0.3s;
@@ -1966,7 +1966,7 @@ a.service-card-link {
 }
 
 .testimonial-quote {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Cormorant Garamond', serif;
     font-size: 4rem;
     line-height: 1;
     color: var(--coral);
@@ -2133,7 +2133,7 @@ a.service-card-link {
 }
 
 .contact-item h4 {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 0.95rem;
     font-weight: 600;
     color: var(--navy);
@@ -2167,7 +2167,7 @@ a.service-card-link {
     padding: 14px 18px;
     border: 2px solid var(--border);
     border-radius: 12px;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 0.95rem;
     color: var(--text-primary);
     background: var(--white);

@@ -168,7 +168,7 @@ const artworkData = [
     {
         title: 'The Cathedral of Becoming',
         tool: 'Google Gemini + Nano Banana 2',
-        desc: 'Structure dissolves, but order remains. Nature is not the opposite of architecture — it is architecture evolved.',
+        desc: 'Structure dissolves, but order remains. Nature is not the opposite of architecture — it is architecture evolved',
         toolsList: ['Google Gemini', 'Nano Banana 2'],
         cover: 'assets/gallery/01-dreamscape-horizons/Cathedral of Becoming.png',
         type: 'image',
@@ -177,7 +177,7 @@ const artworkData = [
     {
         title: 'Midnight Frequency',
         tool: 'Google Gemini + Nano Banana 2',
-        desc: 'In the glow of neon shadows, her steady gaze cuts through the electric silence.',
+        desc: 'In the glow of neon shadows, her steady gaze cuts through the electric silence',
         toolsList: ['Google Gemini', 'Nano Banana 2'],
         cover: 'assets/gallery/02-neon-portraits/Midnight Frequency.png',
         type: 'image',
@@ -186,7 +186,7 @@ const artworkData = [
     {
         title: 'Emotions Made Visible',
         tool: 'OpenArt + Seedance 5.0 Lite',
-        desc: 'Ribbons of color burst like untamed thoughts learning how to fly.',
+        desc: 'Ribbons of color burst like untamed thoughts learning how to fly',
         toolsList: ['OpenArt', 'Seedance 5.0 Lite'],
         cover: 'assets/gallery/03-abstract-emotions/Emotions made visible - fine art.png',
         type: 'image',
@@ -195,7 +195,7 @@ const artworkData = [
     {
         title: 'Seasons',
         tool: 'Nim + Kling O1',
-        desc: 'Walking through the turning year as the world transforms around her, her flowing gown shifting colors like the seasons themselves.',
+        desc: 'Walking through the turning year as the world transforms around her, her flowing gown shifting colors like the seasons themselves',
         toolsList: ['Grok Imagine', 'Nim', 'Kling O1'],
         cover: 'assets/gallery/04-motion-stories/Seasons.mp4',
         type: 'video',
@@ -204,16 +204,16 @@ const artworkData = [
     {
         title: 'Future Cities',
         tool: 'Google Gemini + Nano Banana 2',
-        desc: 'A future city where architecture grows like a forest — terraced gardens cascading down buildings, community life visible on multiple levels, harmonious with nature.',
+        desc: 'A future city where architecture grows like a forest — terraced gardens cascading down buildings, community life visible on multiple levels, harmonious with nature',
         toolsList: ['Google Gemini', 'Nano Banana 2'],
         cover: 'assets/gallery/05-future-cities/Future Cities.png',
         type: 'image',
         refs: []
     },
     {
-        title: 'Scented Candle',
+        title: 'Candle',
         tool: 'Nim + Seedance 1.5',
-        desc: 'A quiet flame flickers on the bedside table as delicate ribbons of smoke drift softly.',
+        desc: 'A quiet flame flickers on the bedside table as delicate ribbons of smoke drift softly',
         toolsList: ['Nim', 'Seedance 1.5'],
         cover: 'assets/gallery/06-brand-concepts/Scented candle.mp4',
         type: 'video',
@@ -222,7 +222,7 @@ const artworkData = [
     {
         title: 'Breath of Light',
         tool: 'Nim + Veo 3.1',
-        desc: 'She rises through a veil of golden mist, as if the night itself is learning how to breathe.',
+        desc: 'She rises through a veil of golden mist, as if the night itself is learning how to breathe',
         toolsList: ['Nim', 'Veo 3.1'],
         cover: 'assets/gallery/07-ethereal-motion/Breath of Light.mp4',
         type: 'video',
@@ -231,7 +231,7 @@ const artworkData = [
     {
         title: 'Light Studies',
         tool: 'Nim + Kling 3 Pro',
-        desc: 'A quiet shard of sun breaks the dark, and the room is stained with wandering colors.',
+        desc: 'A quiet shard of sun breaks the dark, and the room is stained with wandering colors',
         toolsList: ['Nim', 'Kling 3 Pro'],
         cover: 'assets/gallery/08-light-studies/ltNEEjxzin1TSk1pDrf1B_output_0.mp4',
         type: 'video',
@@ -240,7 +240,7 @@ const artworkData = [
     {
         title: 'Organic Forms',
         tool: 'Nim + Grok Imagine',
-        desc: 'A quiet shape remembers a thousand forms, dissolving and returning like a thought that never quite ends.',
+        desc: 'A quiet shape remembers a thousand forms, dissolving and returning like a thought that never quite ends',
         toolsList: ['Nim', 'Grok Imagine'],
         cover: 'assets/gallery/09-organic-forms/Organic motion loop.mp4',
         type: 'video',
@@ -249,7 +249,7 @@ const artworkData = [
     {
         title: 'Liquid Metal Glitch',
         tool: 'Nim + Seedance 1.5',
-        desc: 'Catching whispers of color in its silent, gliding pulse.',
+        desc: 'Catching whispers of color in its silent, gliding pulse',
         toolsList: ['Nim', 'Seedance 1.5'],
         cover: 'assets/gallery/10-digital-textures/Liquid metal glitch flow.mp4',
         type: 'video',
@@ -258,7 +258,7 @@ const artworkData = [
     {
         title: 'Scented Candle',
         tool: 'Nim + Kling 3 Pro',
-        desc: 'Soft candlelight and a gentle fragrance fill the room, turning quiet moments into pure relaxation.',
+        desc: 'Soft candlelight and a gentle fragrance fill the room, turning quiet moments into pure relaxation',
         toolsList: ['Nim', 'Kling 3 Pro'],
         cover: 'assets/gallery/11-scented-candle/Scented candle product reel.mp4',
         type: 'video',
