@@ -324,12 +324,23 @@ function updatePanel(index) {
 function openPanel(index) {
     updatePanel(index);
     aiGalleryWrap.classList.add('panel-open');
+    history.pushState({ panel: true }, '');
 }
 
 function closePanel() {
     aiGalleryWrap.classList.remove('panel-open');
     aiCards.forEach(c => c.classList.remove('active-card'));
+    if (history.state && history.state.panel) {
+        history.back();
+    }
 }
+
+window.addEventListener('popstate', () => {
+    if (aiGalleryWrap.classList.contains('panel-open')) {
+        aiGalleryWrap.classList.remove('panel-open');
+        aiCards.forEach(c => c.classList.remove('active-card'));
+    }
+});
 
 aiCards.forEach(card => {
     card.addEventListener('click', () => {
@@ -344,6 +355,16 @@ aiCards.forEach(card => {
 
 panelClose.addEventListener('click', closePanel);
 document.getElementById('panelOverlay').addEventListener('click', closePanel);
+
+document.addEventListener('click', (e) => {
+    if (
+        aiGalleryWrap.classList.contains('panel-open') &&
+        !aiSidePanel.contains(e.target) &&
+        !e.target.closest('.ai-card')
+    ) {
+        closePanel();
+    }
+});
 
 // ============================================
 // PORTFOLIO MODAL
